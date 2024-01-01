@@ -36,3 +36,148 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  /* IMPORTANT */
+  background-color: lightblue;
+  padding: 10px;
+  /* fixed stays in same page even when moving */
+  position: fixed;
+  width: 100%;
+}
+
+.navigation a {
+  /* IMPORTANT
+ NAV and BUTTON class is the same */
+  padding: 10px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  /* IMPORTANT */
+  background-color: white;
+}
+
+footer {
+  /* IMPORTANT*/
+  /* fixed always stays in the same page even when scrolling*/
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.lake-image {
+  /* HERO IMG IMPORTANT */
+  background-image: url(../src/Images/lake-image.jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.lake-text {
+  /* IMPORTANT */
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  color: beige;
+  left: 50%;
+  /* transform - horizontal-Vertical*/
+  transform: translate(-50%, -50%);
+  bottom: 40%;
+}
+
+.contacts {
+  /* This is the H1 of contact page*/
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-page {
+  background-color: lightgray;
+  height: 100%;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  /* fixed-relative to the viewport*/
+  position: fixed;
+  bottom: -11px;
+  left: 35%;
+}
+
+.horizontal {
+  /* relative caused it to be adjusted away from normal position*/
+  position: relative;
+  top: 20px;
+  height: 12px;
+  background: lavenderblush;
+}
+
+.button {
+  color: navy;
+  transition-duration: 0.5s;
+  border-radius: 10px;
+  /* top-down, left-right*/
+  padding: 6px 15px;
+}
+
+.button:hover {
+  background: white;
+}
+
+.ttd {
+  text-align: center;
+}
+
+.todo-container {
+  text-align: center;
+  margin: 0 10%;
+}
+
+.ttd-page {
+  height: 310%;
+}
+
+.contact-form {
+  /* flex aligns in a row*/
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  color: black;
+  transition-duration: 0.5s;
+  border-radius: 10px;
+  /* top-down, left-right*/
+  padding: 6px 15px;
+}
+
+.submit-button:hover {
+  background: white;
+}
+
+.desc {
+  color: white;
+}
+
+.cta-button a {
+  text-decoration: none;
+  background-color: white;
+  padding: 7px;
+  border-radius: 7px;
+  transition-duration: 0.5s;
+}
+
+.cta-button a:hover {
+  background-color: yellow;
+}
