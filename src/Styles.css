@@ -37,18 +37,40 @@
   }
 }
 
+* {
+  /* IMPORTANT */
+  /* asterisk (universal selector) is useful when you want to select all elements on the page.*/
+
+  /*margin creates space around an element. padding creates space within element.*/
+  margin: 0;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body,
+html {
+  height: 100%;
+}
+
 header {
   /* IMPORTANT */
   background-color: lightblue;
   padding: 10px;
   /* fixed stays in same page even when moving */
+  top: 0;
   position: fixed;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .navigation a {
   /* IMPORTANT
- NAV and BUTTON class is the same */
+  NAV and BUTTON class is the same */
   padding: 10px;
   border-radius: 10px;
   transition-duration: 0.5s;
@@ -60,27 +82,17 @@ header {
   background-color: white;
 }
 
-footer {
-  /* IMPORTANT*/
-  /* fixed always stays in the same page even when scrolling*/
-  position: fixed;
-  bottom: 0%;
-  width: 100%;
-  background-color: lightblue;
-  text-align: center;
-}
-
 .lake-image {
   /* HERO IMG IMPORTANT */
-  background-image: url(../src/Images/lake-image.jpg);
-  height: 100%;
+  background-image: url(./Images/lake-image.jpg);
+  /* height: 100%;
+  background-position: center;
+  background-size: cover; */
   background-position: center;
   background-size: cover;
-}
-
-body,
-html {
-  height: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
 .lake-text {
@@ -95,79 +107,12 @@ html {
   bottom: 40%;
 }
 
-.contacts {
-  /* This is the H1 of contact page*/
-  padding: 20px;
-  text-align: center;
-}
-
-.contact-page {
-  background-color: lightgray;
-  height: 100%;
-}
-
-.logo {
-  height: 60px;
-  width: auto;
-  /* fixed-relative to the viewport*/
-  position: fixed;
-  bottom: -11px;
-  left: 35%;
-}
-
 .horizontal {
   /* relative caused it to be adjusted away from normal position*/
   position: relative;
   top: 20px;
   height: 12px;
   background: lavenderblush;
-}
-
-.button {
-  color: navy;
-  transition-duration: 0.5s;
-  border-radius: 10px;
-  /* top-down, left-right*/
-  padding: 6px 15px;
-}
-
-.button:hover {
-  background: white;
-}
-
-.ttd {
-  text-align: center;
-}
-
-.todo-container {
-  text-align: center;
-  margin: 0 10%;
-}
-
-.ttd-page {
-  height: 310%;
-}
-
-.contact-form {
-  /* flex aligns in a row*/
-  display: flex;
-  justify-content: center;
-}
-
-.submit-button {
-  color: black;
-  transition-duration: 0.5s;
-  border-radius: 10px;
-  /* top-down, left-right*/
-  padding: 6px 15px;
-}
-
-.submit-button:hover {
-  background: white;
-}
-
-.desc {
-  color: white;
 }
 
 .cta-button a {
@@ -180,4 +125,34 @@ html {
 
 .cta-button a:hover {
   background-color: yellow;
+}
+
+.ttd {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.todo-container {
+  text-align: center;
+  margin: 0 10%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.todo-img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+footer {
+  /* IMPORTANT*/
+  /* fixed always stays in the same page even when scrolling*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px;
+  margin-top: 1rem;
 }
