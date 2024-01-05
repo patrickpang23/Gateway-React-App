@@ -1,0 +1,206 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  /* IMPORTANT */
+  /* asterisk (universal selector) is useful when you want to select all elements on the page.*/
+
+  /*margin creates space around an element. padding creates space within element.*/
+  margin: 0;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+header {
+  /* IMPORTANT */
+  background-color: lightblue;
+  padding: 10px;
+  /* fixed stays in same page even when moving */
+  top: 0;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.navigation a {
+  /* IMPORTANT
+  NAV and BUTTON class is the same */
+  padding: 10px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  /* IMPORTANT */
+  background-color: white;
+}
+
+.lake-image {
+  /* HERO IMG IMPORTANT */
+  background-image: url(./Images/lake-image.jpg);
+  /* height: 100%;
+  background-position: center;
+  background-size: cover; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.lake-text {
+  /* IMPORTANT */
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  color: beige;
+  left: 50%;
+  /* transform - horizontal-Vertical*/
+  transform: translate(-50%, -50%);
+  bottom: 40%;
+}
+
+.horizontal {
+  /* relative caused it to be adjusted away from normal position*/
+  position: relative;
+  top: 20px;
+  height: 12px;
+  background: lavenderblush;
+}
+
+.cta-button a {
+  text-decoration: none;
+  background-color: white;
+  padding: 7px;
+  border-radius: 7px;
+  transition-duration: 0.5s;
+}
+
+.cta-button a:hover {
+  background-color: yellow;
+}
+
+.ttd {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.todo-container {
+  text-align: center;
+  margin: 0 10%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.todo-img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+footer {
+  /* IMPORTANT*/
+  /* fixed always stays in the same page even when scrolling*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px;
+  margin-top: 1rem;
+}
+
+.contactTitle {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.contactTextInputs {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contactSubmit {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 160px;
+}
+
+.contactSubmit:hover {
+  background-color: #45a049;
+}
+
+.contactContainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 80%;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
