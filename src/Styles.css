@@ -156,3 +156,51 @@ footer {
   padding: 10px;
   margin-top: 1rem;
 }
+
+.contactTitle {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.contactTextInputs {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contactSubmit {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 160px;
+}
+
+.contactSubmit:hover {
+  background-color: #45a049;
+}
+
+.contactContainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 80%;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
